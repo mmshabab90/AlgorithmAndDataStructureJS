@@ -11,6 +11,11 @@
  */
 
 function palindrome(str) {
+  // Solution using split to convert string to array
+  // and every function to compare each charater to the last one
+  // to make sure the word is a palindrome
+  // This solution has higher order of operation as it compares the
+  // character twice making it not an ideal solution
   return str.split("").every((char, i) => {
     return char === str[str.length - i - 1];
   });

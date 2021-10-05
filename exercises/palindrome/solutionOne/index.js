@@ -11,6 +11,9 @@
  */
 
 function palindrome(str) {
+    // Solution converting string to array and reverse 
+    // and join to get the reversed word
+    // and comparing it to original string to see if it's a palindrome 
   const reversed = str.split("").reverse().join("");
   return str === reversed;
 }
